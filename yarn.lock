@@ -2027,7 +2027,7 @@
     "@types/bson" "*"
     "@types/node" "*"
 
-"@types/node@*":
+"@types/node@*", "@types/node@>=8.1.0":
   version "17.0.42"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.42.tgz#d7e8f22700efc94d125103075c074396b5f41f9b"
   integrity sha512-Q5BPGyGKcvQgAMbsr7qEGN/kIPN6zZecYYABeTDBizOsau+2NMdSVTar9UQw21A2+JyA2KRNDYaYrPB0Rpk2oQ==
@@ -9521,6 +9521,14 @@ strip-json-comments@~2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
   integrity sha512-4gB8na07fecVVkOI6Rs4e7T6NOTki5EmL7TUduTs6bu3EdnSycntVJ4re8kgZA+wx9IueI2Y11bfbgwtzuE0KQ==
+
+stripe@^9.8.0:
+  version "9.8.0"
+  resolved "https://registry.yarnpkg.com/stripe/-/stripe-9.8.0.tgz#c1707dbcacde8f27fe32d2ee9de87844026938c2"
+  integrity sha512-6trh3w4U2wRAvXdh2ilHxky/nWP7aFMGvQX0Ga2eCMAqQwYGOBkBT0ZxT3V+wWruOB1svpuOO6ixpMQif0bnIw==
+  dependencies:
+    "@types/node" ">=8.1.0"
+    qs "^6.10.3"
 
 style-loader@3.3.1:
   version "3.3.1"
