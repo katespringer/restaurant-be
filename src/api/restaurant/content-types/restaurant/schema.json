@@ -4,7 +4,8 @@
   "info": {
     "singularName": "restaurant",
     "pluralName": "restaurants",
-    "displayName": "Restaurant"
+    "displayName": "Restaurant",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,14 +19,21 @@
       "type": "text"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "dishes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::dish.dish",
+      "mappedBy": "restaurant"
     }
   }
 }

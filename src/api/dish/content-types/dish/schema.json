@@ -32,8 +32,9 @@
     },
     "restaurant": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::restaurant.restaurant"
+      "relation": "manyToOne",
+      "target": "api::restaurant.restaurant",
+      "inversedBy": "dishes"
     }
   }
 }
