@@ -26,7 +26,7 @@ module.exports = createCoreController('api::order.order', ({ strapi }) =>  ({
       // Register the order in the database
       const entity = await strapi.service('api::order.order').create({
       data: {
-      user: ctx.state.user.id,
+      user: ctx.state.user.username,
       charge_id: charge.id,
       amount: stripeAmount,
       address,
