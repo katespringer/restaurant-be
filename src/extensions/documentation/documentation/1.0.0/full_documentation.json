@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-06-15T17:27:41.718Z"
+    "x-generation-date": "2022-06-16T00:45:23.502Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -115,8 +115,7 @@
                 "example": "string or id"
               },
               "price": {
-                "type": "number",
-                "format": "float"
+                "type": "integer"
               },
               "restaurant": {
                 "oneOf": [
@@ -523,8 +522,7 @@
                       }
                     },
                     "price": {
-                      "type": "number",
-                      "format": "float"
+                      "type": "integer"
                     },
                     "restaurant": {
                       "type": "object",
@@ -1305,8 +1303,7 @@
                                                 }
                                               },
                                               "price": {
-                                                "type": "number",
-                                                "format": "float"
+                                                "type": "integer"
                                               },
                                               "restaurant": {
                                                 "type": "object",
@@ -2145,8 +2142,7 @@
                     }
                   },
                   "price": {
-                    "type": "number",
-                    "format": "float"
+                    "type": "integer"
                   },
                   "restaurant": {
                     "type": "object",
@@ -2927,8 +2923,7 @@
                                               }
                                             },
                                             "price": {
-                                              "type": "number",
-                                              "format": "float"
+                                              "type": "integer"
                                             },
                                             "restaurant": {
                                               "type": "object",
@@ -4920,8 +4915,7 @@
                                     }
                                   },
                                   "price": {
-                                    "type": "number",
-                                    "format": "float"
+                                    "type": "integer"
                                   },
                                   "restaurant": {
                                     "type": "object",
@@ -6541,8 +6535,7 @@
                                   }
                                 },
                                 "price": {
-                                  "type": "number",
-                                  "format": "float"
+                                  "type": "integer"
                                 },
                                 "restaurant": {
                                   "type": "object",
