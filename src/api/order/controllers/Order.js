@@ -25,14 +25,15 @@ module.exports = createCoreController('api::order.order', ({ strapi }) =>  ({
   
       // Register the order in the database
       const entity = await strapi.service('api::order.order').create({
-        user: ctx.state.user.id,
-        charge_id: charge.id,
-        amount: stripeAmount,
-        address,
-        dishes,
-        city,
-        state,
-      });
+      data: {
+      user: ctx.state.user.id,
+      charge_id: charge.id,
+      amount: stripeAmount,
+      address,
+      dishes,
+      city,
+      state,
+    }});
   
       const sanitizedEntity = await this.sanitizeOutput(entity, ctx);
   
